@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+ padding: 0;
+ margin: 0;
+ font-family: "Plus Jakarta Sans", sans-serif;
+ box-sizing: border-box;
+ user-select: none;
+}
+body{
+ width: 100vw;
+ height: 100vh;
+ padding: 3rem 15rem;
+}
+.background{
+ background-color: hsl(203, 41%, 72%);
+ border: 1px solid whitesmoke;
+ box-shadow: 5px 7px 15px grey;
+ height: 35rem;
+ padding: 8%;
+}
+.calculator{
+ background-color: white;
+ display: flex;
+ border-radius: 15px;
+ box-shadow: 2px 4px 5px rgb(124, 124, 124);
+}
+.fig-entry{
+ width: 80rem;
+ padding: 0.8rem;
+}
+.inputField{
+ padding-top: 1rem;
+}
+.btn-icon{
+ border: none;
+ outline: none;
+padding: 0.5rem;
+width: 1.5rem;
+ border-left: 1px solid black;
+ border-top: 1px solid black;
+ border-bottom: 1px solid black;
+ border-top-left-radius: 5px;
+ border-bottom-left-radius: 5px;
+}
+#amount{
+ padding: 0.5rem;
+ border: 1px solid black;
+ border-top-right-radius: 5px;
+ border-bottom-right-radius: 5px;
+ border-left: none;
+ width: 12rem;
+}
+.term{
+ padding: 0.5rem;
+ border: 1px solid black;
+ width: 5rem;
+ border-top-left-radius: 5px;
+ border-bottom-left-radius: 5px;
+ border-right: none;
+}
+.btn-icon1{
+ outline: none;
+ border: 1px solid black;
+ padding: 0.5rem;
+ border-top-right-radius: 5px;
+ border-bottom-right-radius: 5px;
+ border-left: none;
+ margin-top: 0.1rem;
+}
+.type{
+ width: 100%;
+ border: 1px solid black;
+ padding: 0.4rem 0 0.4rem 0.7rem;
+ border-radius: 5px;
+}
+#calculate{
+ margin-top: 2rem;
+ border: none;
+ outline: none;
+ border-radius: 20px;
+ font-weight: 800;
+ padding: 0.5rem 1rem;
+ background-color: hsl(61, 70%, 52%);
+ text-align: center;
+ display: flex;
+ align-items: center;
+ gap: 0.3rem;
+}
+.mortgage_Results{
+ padding: 0.8rem;
+ background-color: teal;
+ width: 90rem;
+ border-radius: 15px;
+ border-bottom-left-radius: 6rem;
+ background-color: hsl(202, 55%, 16%);
+}
+.value{
+ margin-top: 1rem;
+ height: 9rem;
+ background-color: hsl(202, 55%, 16%);
+ box-shadow: 1px 1px 2px grey;
+ padding: 1rem;
+ border: 1px solid grey;
+ border-top: 3px solid;
+ border-top-color: hsl(61, 70%, 52%);
+ border-radius: 5px;
+}
+#monthly-repay{
+ color: hsl(61, 70%, 52%);
+ margin: 0.2 rem 0 0.2rem 0;
+}
+#total-repay{
+ margin-top: 0.2rem;
+ font-weight: 600;
+ font-size: 20px;
+}
+
+/*Media Query*/
+@media (min-width: 320px) and (max-width: 767px) {
+ body{
+  padding: 0;
+ }
+ .background{
+  padding: 0.5rem 1rem;
+  width: auto;
+  height: 100dvh;
+ }
+ .fig-entry{
+  width: auto; 
+ }
+ .calculator{
+  display: flex;
+  flex-direction: column;
+ }
+ .mortgage_Results{
+  width: auto;
+  border-radius: 10px;
+ }
+#amount{
+ width: auto;
+}
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+ body{
+  padding: 0;
+ }
+ .background{
+  padding: 0.5rem 1rem;
+  width: auto;
+  height: 100dvh;
+ }
+ .fig-entry{
+  width: 30rem; 
+ }
+ .calculator{
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  margin: 5% 20%;
+ }
+ .mortgage_Results{
+  width: auto;
+  border-radius: 10px;
+ }
+#amount{
+ width: 15rem;;
+}
+#mortgage-amount{
+ display: flex;
+ align-items: center;
+ gap: 1rem;
+}
+.values input{
+ width: 10rem;
+}
+}
